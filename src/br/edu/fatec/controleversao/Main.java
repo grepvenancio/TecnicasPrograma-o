@@ -6,8 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         int operação;
-        double num1,num2, resultado;
+        double num1,num2, resultado = 0;
 
+        Porcentagem porcento = new Porcentagem();
         Calculadora calc = new Calculadora();
         Scanner ler = new Scanner(System.in);
         while(true) {
@@ -35,6 +36,9 @@ public class Main {
                     resultado = calc.subtrai(num1, num2);
                     break;
             }
+            System.out.println(resultado);
         }
+        System.out.println(porcento.regratres(100,100,50));
+
     }
 }
